@@ -55,7 +55,7 @@ function getCss(theme: string, fontSize: string) {
 
     code {
         color: #D400FF;
-        font-family: 'Vera';
+        font-family: 'Vera', 'M PLUS 1p';
         white-space: pre-wrap;
         letter-spacing: -5px;
     }
@@ -94,7 +94,7 @@ function getCss(theme: string, fontSize: string) {
     }
     
     .heading {
-        font-family: 'Inter', sans-serif;
+        font-family: 'M PLUS 1p', 'Inter', sans-serif;
         font-size: ${sanitizeHtml(fontSize)};
         font-style: bold;
         color: ${foreground};
