@@ -20,6 +20,8 @@ function getCss(theme: string, fontSize: string) {
         foreground = 'white';
     }
     return `
+    @import url('https://fonts.googleapis.com/css?family=M+PLUS+1p');
+    
     @font-face {
         font-family: 'Inter';
         font-style:  normal;
