@@ -47,10 +47,7 @@ function getCss(theme: string, fontSize: string) {
         background: ${background};
         background-size: 100px 100px;
         height: 100vh;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
+        position: relative;
     }
 
     code {
@@ -99,6 +96,23 @@ function getCss(theme: string, fontSize: string) {
         font-style: bold;
         color: ${foreground};
         line-height: 1.8;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 85%;
+        text-align: center;
+    }
+    
+    .title {
+        font-family: 'M PLUS 1p', 'Inter', sans-serif;
+        font-size: 72px;
+        color: ${foreground};
+        line-height: 1.8;
+        position: absolute;
+        top: 75%;
+        left: 75%;
+        transform: translate(-50%,-50%);
     }`;
 }
 
@@ -120,6 +134,7 @@ export function getHtml(parsedReq: ParsedRequest) {
                 md ? marked(text) : sanitizeHtml(text)
             )}
             </div>
+            <div class="title">hiroyuki blog</div>
         </div>
     </body>
 </html>`;
